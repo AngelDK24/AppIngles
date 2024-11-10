@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Learn English in a fun way with our interactive educational games. Improve your vocabulary, grammar, and conversation skills.">
+    <meta name="keywords" content="English, Games, Education, Interactive learning, Grammar, Vocabulary">
+    <meta name="author" content="Your Name">
+    <title>English App - Learn by Playing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stilo.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <a href="#" aria-label="Home">Logo</a>
+        </div>
+        <nav class="navbar">
+            <a href="#login-section" aria-label="Go to Home">Home</a>
+            <a href="#" aria-label="About Us">About Us</a>
+            <a href="#" aria-label="Contact">Contact</a>
+            <a href="#" aria-label="Products">Products</a>
+            <a href="#" aria-label="Pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content main-header">
+            <h1 class="title">Home</h1>
+            <div class="flex-container">
+                <div class="text-content">
+                    <p>Would you like to learn English in a fun and effective way?
+                        With our interactive games, learning has never been so easy!
+                        Improve your vocabulary, grammar, and conversation skills while having fun.
+                    </p>
+                </div>
+                <div class="form-container">
+                    <h2>Create an Account</h2>
+                    <form action="#" method="POST">
+                        <div class="input-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username" required aria-label="Username">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required aria-label="Email">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required aria-label="Password">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="btn">Create Account</button>
+                        </div>
+                        <p><a href="#login-section">Log in</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="content sau">
+            <h2 class="title">Products</h2>
+            <p>1. <strong>"Find the Words" Game</strong>: Test your vocabulary with our fun game!
+                Find the hidden words in English as fast as you can.
+                The more you play, the more words you’ll learn and the better you’ll get at recognizing vocabulary.
+            </p>
+            <p>2. <strong>"Find the Pairs" Game</strong>: Perfect for improving your memory while learning.
+                Choose cards on the board and find words that match their translation or image in English.
+                Ideal for reinforcing your vocabulary!
+            </p>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fab fa-angular" aria-hidden="true"></i>
+                    <h3>Vocabulary Game</h3>
+                    <p>Explore a variety of games to learn new words in a fun way.</p>
+                    <a href="juegos/juego1.html" class="btn" aria-label="Play Game 1">Play Game 1</a>
+                </div>
+                <div class="box">
+                    <i class="fas fa-brain" aria-hidden="true"></i>
+                    <h3>Find the Pairs</h3>
+                    <p>Improve your memory by associating words with images and translations.</p>
+                    <a href="juego2/juego2.html" class="btn" aria-label="Play Game 2">Play Game 2</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="login-section" class="login-section">
+            <div class="login-container">
+                <h2>Log In</h2>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email" required autocomplete="email" aria-label="Login Email">
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required autocomplete="current-password" aria-label="Login Password">
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn">Log In</button>
+                    </div>
+                    <div class="input-group">
+                        <a href="#" aria-label="Forgot your password?">Forgot your password?</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

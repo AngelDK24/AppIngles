@@ -1,0 +1,246 @@
+:root {
+    --primary-color: magenta;
+    --dark-primary-color: darkmagenta;
+    --secondary-color: #f4f4f4;
+    --text-color: white;
+    --header-bg-color: black;
+    --box-bg-color: #101010;
+    --border-color: #ccc;
+    --title-color: #222;
+    --paragraph-color: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color);
+    text-align: center;
+}
+
+/* Header */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: var(--header-bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: gray;
+}
+
+/* Main Header */
+.main-header {
+    height: 60vh !important;
+    background: url(imag1.jpg) no-repeat center center/cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: var(--title-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--paragraph-color);
+    letter-spacing: 0.5px;
+}
+
+/* Buttons */
+.btn, .input-group button, .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    background: var(--primary-color);
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover, .input-group button:hover, .button:hover {
+    background: var(--dark-primary-color);
+    transform: scale(1.05);
+}
+
+/* Main Content Layout */
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 100px;
+    background: green;
+}
+
+/* Box Container */
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: var(--box-bg-color);
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box-container .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 10rem rgba(0, 0, 0, 0.7);
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: var(--secondary-color);
+    padding: 20px;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    color: var(--paragraph-color);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Additional Styling */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-container {
+    flex: 0.5;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Board Styling */
+.mai-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    background-color: #787C7E;
+    font-size: 50px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.result {
+    text-align: center;
+    font-size: 36px;
+}
